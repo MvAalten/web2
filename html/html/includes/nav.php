@@ -12,7 +12,7 @@
             <a>Lucky Travel</a>
         </div>
         <div class="nav-right">
-            <a>Home</a>
+            <a href="../pages/index.php">Home</a>
             <a>Bookings</a>
             <a href="../pages/over_ons.php">Over ons</a>
             <a>Contact</a>
