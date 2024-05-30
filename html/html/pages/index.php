@@ -12,7 +12,7 @@
 <body>
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
     <?php
-        include('includes/nav.php')
+        include('../includes/nav.php')
     ?>
     <div class="lower-body">
         <div class="lower-body-left">
