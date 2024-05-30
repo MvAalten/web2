@@ -13,7 +13,7 @@
         </div>
         <div class="nav-right">
             <a href="../pages/index.php">Home</a>
-            <a>Bookings</a>
+            <a href="../pages/bookings.php">Bookings</a>
             <a href="../pages/over_ons.php">Over ons</a>
             <a href="../pages/contact.php">Contact</a>
             <a>Login</a>
