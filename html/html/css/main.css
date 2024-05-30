@@ -163,3 +163,24 @@
     margin-right: 50%;
 }
 /* over ons einde */
+/* Contact begin */
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.left-filter-box{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+.right-filter-box{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+}
+/* contact einde */

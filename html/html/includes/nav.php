@@ -15,7 +15,7 @@
             <a>Home</a>
             <a>Bookings</a>
             <a href="../pages/over_ons.php">Over ons</a>
-            <a>Contact</a>
+            <a href="../pages/contact.php">Contact</a>
             <a>Login</a>
         </div>
     </div>
