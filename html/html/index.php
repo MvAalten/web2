@@ -17,40 +17,31 @@
     <div class="lower-body">
         <div class="lower-body-left">
             <div class="upper">
-
             </div>
             <a>Filters</a>
-            <div class="small-line">
-                    
+            <div class="small-line">     
             </div>
             <div class="lower">
                 <div class="filter-box">
-
                 </div>
-                <div class="filter-box">
-                    
+                <div class="filter-box"> 
                 </div>
-                <div class="filter-box">
-                    
+                <div class="filter-box">   
                 </div>
-                <div class="filter-box">
-                    
+                <div class="filter-box">  
                 </div>
             </div>
         </div>
         <div class="line">
-
         </div>
         <div class="lower-body-right">
             <div class="middle-lower-body">
                 <div class="left-middle-lower-body">
                     <div class="box">
-
                     </div>
                 </div>
                 <div class="right-lower-body-box">
                     <div class="space">
-
                     </div>
                     <div class="button-see-more-index">
                         <a>See more</a>
