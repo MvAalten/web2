@@ -72,7 +72,7 @@
 .small-line{
     width: 95%;
     height: 0.5%;
-    background-color: rgba(162, 162, 162, 0.459);
+    background-color: rgba(162, 162, 162, 0.23);
     border-radius: 10%;
 }
 .upper{
@@ -184,3 +184,87 @@
     background-color: black;
 }
 /* contact einde */
+
+/* Login begin */
+/* achtergrond voor login */
+.background-img-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.thespruceeats.com/thmb/ao7czXh1afSBamtQnDUilsLD3uc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/doner-kebab-recipe-4171703-hero-01-c14d8b7189df4685a50bae311317f831.jpg");
+}
+
+.background-img {
+    display: flex;
+    height: 100%;
+    width: 100%
+}
+
+/* hier begint form login */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    width: 50%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-extra {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-log {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    background-color: #FF8E3C;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.username-log {
+    display: flex;
+    height: 50px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.password-log {
+    display: flex;
+    height: 50px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Login einde */
