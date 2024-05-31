@@ -14,6 +14,7 @@
     <?php
         include('includes/nav.php')
     ?>
+    <main>
     <div class="lower-body">
         <div class="lower-body-left">
             <div class="upper">
@@ -50,5 +51,6 @@
             </div>
         </div>
     </div>
+    </main>
 </body>
 </html>
