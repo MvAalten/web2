@@ -28,7 +28,18 @@
                 <input type="password" name="wachtwoord" placeholder="Wachtwoord" required class="password-log">
                 <input type="submit" value="Login" class="button-log">  
             </form>
-            <a href="register.php">Register</a>
+            </div>
+            <div class="login">
+                <div class="login-container">
+            <form class="form-extra" action='register_logic.php' name='login' method="POST">
+                <label> <p>Gebruikersnaam:</p></label>
+                <input type="text" name="gebruikersnaam" placeholder="Gebruikersnaam" required class="username-log">
+                <label><p>E-mail:</p></label>
+                <input type="text" name="email" placeholder="E-mail" required class="username-log">
+                <label><p>Wachtwoord:</p></label>
+                <input type="password" name="wachtwoord" placeholder="Wachtwoord" required class="password-log">
+                <input type="submit" value="Register" class="button-log">  
+            </form>
             </div>
         </div>
     </main>

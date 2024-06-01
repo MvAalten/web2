@@ -202,6 +202,7 @@ main{
     background-size: cover;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     /* background-image: url("hier komt de link van de afbeelding"); */
 }
 
@@ -225,6 +226,7 @@ main{
     height: 600px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .login-container {
