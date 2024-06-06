@@ -17,6 +17,7 @@
             <a href="../pages/over_ons.php">Over ons</a>
             <a href="../pages/contact.php">Contact</a>
             <a href="../pages/login.php">Login</a>
+            <a href="../pages/register.php">Register</a>
         </div>
     </div>
     <div class="img-place">
