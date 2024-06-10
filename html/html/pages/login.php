@@ -22,10 +22,10 @@
             <div class="login">
                 <div class="login-container">
                 <form class="form-extra" action='login_logic.php' name='login' method="POST">
-                    <label> <p>E-mail:</p></label>
-                    <input type="text" name="e-mail" placeholder="E-mail" required class="username-log">
+                    <label> <p>username:</p></label>
+                    <input type="text" name="username" placeholder="username" required class="username-log">
                     <label><p>Wachtwoord:</p></label>
-                    <input type="password" name="wachtwoord" placeholder="Wachtwoord" required class="password-log">
+                    <input type="password" name="password" placeholder="Wachtwoord" required class="password-log">
                     <input type="submit" value="Login" class="button-log">  
                 </form>
                 </div>
