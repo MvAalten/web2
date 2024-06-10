@@ -15,15 +15,16 @@
         ?>
         <div class="login">
             <div class="login-container">
-            <form class="form-extra" action='register_logic.php' name='login' method="POST">
-                <label> <p>Gebruikersnaam:</p></label>
-                <input type="text" name="gebruikersnaam" placeholder="Gebruikersnaam" required class="username-log">
-                <label><p>E-mail:</p></label>
-                <input type="text" name="email" placeholder="E-mail" required class="username-log">
-                <label><p>Wachtwoord:</p></label>
-                <input type="password" name="wachtwoord" placeholder="Wachtwoord" required class="password-log">
-                <input type="submit" value="Register" class="button-log">  
-            </form>
+            <div class="login-form">
+                        <form class="form-extra" action='register_logic.php' name='register_logic' method="post">
+                        <label class="coloring"> Username: </label>  
+                        <input class="username-log" type="text" name="username" placeholder="Username" required>
+                        <label class="coloring"> Password: </label>  
+                        <input class="password-log" type="password" name="password" placeholder="Password" required>
+                        <label class="coloring"> email: </label>  
+                        <input class="type-log-workout2" type="email" name="email" placeholder="email" required>
+                        <input class="button-log" type="submit" value="login">
+                    </div>
             </div>
         </div>
     </body>
