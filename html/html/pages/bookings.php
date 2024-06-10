@@ -24,18 +24,19 @@
                     
             </div>
             <div class="lower">
-                <div class="filter-box">
-
-                </div>
-                <div class="filter-box">
+                <a href="#" class="filter-box">
                     
-                </div>
-                <div class="filter-box">
+                </a>
+                <a href="#" class="filter-box">
                     
-                </div>
-                <div class="filter-box">
+                </a>
+                <a href="#" class="filter-box">
                     
-                </div>
+                </a>
+                <a href="#" class="filter-box">
+                    
+                </a>
+                
             </div>
             
         </div>

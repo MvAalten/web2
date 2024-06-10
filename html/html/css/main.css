@@ -4,6 +4,37 @@
     font-family: "Nunito Sans", sans-serif;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: #0d0d0d;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+p {
+    text-decoration: none;
+    color: #0d0d0d;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+h1 {
+    text-decoration: none;
+    color: #0d0d0d;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+}
 /* start nav bar */
 .container{
     width: 100%;
