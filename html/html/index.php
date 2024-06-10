@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
+    
 </head>
 <body>
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
@@ -15,41 +16,8 @@
         include('includes/nav.php')
     ?>
     <main>
-    <div class="lower-body">
-        <div class="lower-body-left">
-            <div class="upper">
-            </div>
-            <a>Filters</a>
-            <div class="small-line">     
-            </div>
-            <div class="lower">
-                <div class="filter-box">
-                </div>
-                <div class="filter-box"> 
-                </div>
-                <div class="filter-box">   
-                </div>
-                <div class="filter-box">  
-                </div>
-            </div>
-        </div>
-        <div class="line">
-        </div>
-        <div class="lower-body-right">
-            <div class="middle-lower-body">
-                <div class="left-middle-lower-body">
-                    <div class="box">
-                    </div>
-                </div>
-                <div class="right-lower-body-box">
-                    <div class="space">
-                    </div>
-                    <div class="button-see-more-index">
-                        <a>See more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
+        
     </div>
     </main>
 </body>

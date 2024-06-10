@@ -1,8 +1,8 @@
 <?php
 session_start();
 include 'conn.php';
-if(empty($_POST['username']) || empty($_POST["password"])){
-    header("Location: login.php");
+if(empty($_POST['username']) || empty($_POST['password'])){
+    header("Location: register.php");
     exit();
 }
 
@@ -19,7 +19,7 @@ $_SESSION["user"] = $username;
     header ("Location: dashboard.php");
     } 
     else{
-        header("Location: login.php");
+        header("Location: over_ons.php");
     }
 
 ?>

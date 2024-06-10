@@ -43,5 +43,20 @@
         <div class="line">
 
         </div>
+        <div class="lower-body-right">
+            <div class="middle-lower-body">
+                <div class="left-middle-lower-body">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="right-lower-body-box">
+                    <div class="space">
+                    </div>
+                    <div class="button-see-more-index">
+                        <a>See more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
     </html>
