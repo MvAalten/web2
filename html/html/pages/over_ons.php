@@ -15,8 +15,8 @@
             <div class="over-ons-bedrijf-titel">
                 <p>Over ons bedrijf</p>
                 <div class="extra-line-container">
-                <div class="extra-line">
-                </div>
+                    <div class="extra-line">
+                    </div>
                 </div>
             </div>
                 <div class="over-ons-bedrijf-tekst">
@@ -40,8 +40,8 @@
             <div class="over-ons-bedrijf-titel">
                 <p>Over ons</p>
                 <div class="extra-line-container">
-                <div class="extra-line">
-                </div>
+                    <div class="extra-line">
+                    </div>
                 </div>
             </div>
                 <div class="over-ons-bedrijf-tekst">

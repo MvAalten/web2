@@ -5,6 +5,7 @@ if (!isset($_SESSION["user"])){
     exit();
     // als je niet bent in gelogd dan word je verwezen naar de login page
 }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
