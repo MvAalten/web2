@@ -17,13 +17,6 @@
     <?php
         include('includes/nav.php')
     ?>
-    
-    <div class="search-bar-container">
-        <div class="search-bar">
-            <a class="search-bar-text">enter a specific location</a>
-            <div class="line-search-bar"></div>
-        </div>
-        <img src="\assets\ticketsnowonsale.png" alt="" class="ticketsonsale">    
-    </div>
+     
 </body>
 </html>
