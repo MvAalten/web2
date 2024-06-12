@@ -23,7 +23,7 @@
                         <input class="password-log" type="password" name="password" placeholder="Password" required>
                         <label class="coloring"> email: </label>  
                         <input class="type-log-workout2" type="email" name="email" placeholder="email" required>
-                        <input class="button-log" type="submit" value="login">
+                        <input class="button-log" type="submit" value="Register">
                     </div>
             </div>
         </div>
