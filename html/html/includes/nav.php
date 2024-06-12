@@ -15,7 +15,9 @@
 <body>
     <div class="container">
         <div class="nav-left">
+            <a href="../index.php">
             <img src="\assets\logo.png" class="logo">
+            </a>
             <a class="logo-text">Lucky Travel</a>
         </div>
         <div class="nav-middle">
@@ -26,10 +28,10 @@
         </div>
         <div class="container-login-register">
             <div class="nav-right-login">
-                <a href="../pages/login.php">Login</a>
+                <a class="nav-right-text" href="../pages/login.php">Login</a>
             </div>
             <div class="nav-right-register">
-                <a href="../pages/register.php">Register</a>
+                <a class="nav-right-text" href="../pages/register.php">Register</a>
             </div>
         </div>    
     </div>
