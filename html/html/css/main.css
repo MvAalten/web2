@@ -65,24 +65,25 @@ h1 {
     align-items: center;
     color: white;
 }
+.nav-right-text{
+    color: black;
+    /* test */
+}
 .nav-right-login{
-    background-color: #D9D9D9;
+    background-color: #003585;
     display: flex;
     width: 125px;
     height: 30px;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 .nav-right-register{
-    background-color: #D9D9D9;
+    background-color: #003585;
     display: flex;
     width: 125px;
     height: 30px;
     align-items: center;
     justify-content: center;
-    color: white;
-
 }
 .img-nav{
     width: 100%;

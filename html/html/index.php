@@ -17,6 +17,16 @@
     <?php
         include('includes/nav.php')
     ?>
-     
+     <main>
+        <div class="top-part-left">
+            <div class="text-ideale-vakantie">Vind jouw ideale vakantie</div>
+            <button href="#" class="zoeken-index"><a>Zoeken!</a></button>
+        </div>
+        <div class="top-part-right">
+            <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
+            <div class="top-part-right-text-above-image">Take that break take that vacation!</div>
+            <img src="" alt="" class="top-part-right-image">
+        </div>
+     </main>
 </body>
 </html>
