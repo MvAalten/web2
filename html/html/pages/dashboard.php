@@ -14,7 +14,9 @@ if (!isset($_SESSION["user"])){
     <title>Document</title>
 </head>
 <body>
-    
+<?php
+        include('includes/nav.php')
+    ?>
 </body>
 </html>
 
