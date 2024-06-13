@@ -18,14 +18,33 @@
         include('includes/nav.php')
     ?>
      <main>
-        <div class="top-part-left">
-            <div class="text-ideale-vakantie">Vind jouw ideale vakantie</div>
-            <button href="#" class="zoeken-index"><a>Zoeken!</a></button>
+        <div class="top-part-container-index">
+            <div class="top-part-left">
+                <div class="text-ideale-vakantie">Find your ideal vacation!</div>
+                <button href="#" class="zoeken-index"><a class="zoek-button-text">Zoeken!</a></button>
+            </div>
+            <div class="top-part-right">
+                <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
+                <div class="top-part-right-text-above-image">Take that break take that vacation!</div>
+                <img src="\assets\halfiphone.png" class="top-part-right-image">
+            </div>
+        </div>    
+        <div class="middle-banner">
+            <a class="text-middle-banner">Find your ideal vacation!</a>
         </div>
-        <div class="top-part-right">
-            <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
-            <div class="top-part-right-text-above-image">Take that break take that vacation!</div>
-            <img src="" alt="" class="top-part-right-image">
+        <div class="container-under-part-pressable-boxes">
+            <div class="box"></div>
+            <div class="underbox">
+                <a>all inclusive vacations</a>
+            </div>
+            <div class="box"></div>
+            <div class="underbox">
+                <a>travel by plane</a>
+            </div>
+            <div class="box"></div>
+            <div class="underbox">
+                <a></a>
+            </div>
         </div>
      </main>
 </body>
