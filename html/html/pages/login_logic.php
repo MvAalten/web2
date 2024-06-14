@@ -22,4 +22,17 @@ $_SESSION["user"] = $username;
         header("Location: over_ons.php");
     }
 
+    if($user["usertype"]=="user")
+    {
+        $_SESSION['usertype'] = $user['user'];
+        header("location: user_home.php" );
+    }
+    elseif($user["usertype"]=="admin")
+    {
+        $_SESSION['usertype'] = $user['admin'];
+        header("location: dashboard.php");
+    }
+    else{
+        echo "fout";
+    }
 ?>
