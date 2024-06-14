@@ -24,10 +24,12 @@ $_SESSION["user"] = $username;
 
     if($user["usertype"]=="user")
     {
+        $_SESSION['usertype'] = $user['user'];
         header("location: user_home.php" );
     }
     elseif($user["usertype"]=="admin")
     {
+        $_SESSION['usertype'] = $user['admin'];
         header("location: dashboard.php");
     }
     else{
