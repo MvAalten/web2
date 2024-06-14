@@ -20,7 +20,7 @@ if (!isset($_SESSION["user"])){
 <body>
     <div class="container-user-dashboard"> 
         <div class="container-text-header">
-            <a class="text-header-user-dashboard">User dashboard</a>
+            <a class="text-header-user-dashboard">user dashboard</a>
         </div>
     </div>
 </body>
