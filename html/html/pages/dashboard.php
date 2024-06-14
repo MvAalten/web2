@@ -18,9 +18,24 @@ if (!isset($_SESSION["user"])){
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
+<<<<<<< Updated upstream
     <div class="container">
 
     </div>
+=======
+<?php
+        include('../includes/nav.php')
+    ?>
+    <main>
+        <form class="form-extra" action='login_logic.php' name='login' method="POST">
+            <label> <p>Gebruikersnaam:</p></label>
+            <input type="text" name="username" placeholder="gebruikersnaam" required class="username-log">
+            <label><p>Wachtwoord:</p></label>
+            <input type="password" name="password" placeholder="wachtwoord" required class="password-log">
+            <input type="submit" value="Login" class="button-log">  
+        </form>
+    </main>
+>>>>>>> Stashed changes
 </body>
 </html>
 
