@@ -119,9 +119,12 @@ h1 {
 /* end of nav bar */
 
 /* start of middle banner and top part index en under part -deniz*/
+.box-index{
+    
+}
 .container-under-part-pressable-boxes{
     display: flex;
-    
+    flex-direction: column;
 }
 .zoek-button-text{
     color: white;

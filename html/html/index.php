@@ -33,15 +33,16 @@
             <a class="text-middle-banner">Find your ideal vacation!</a>
         </div>
         <div class="container-under-part-pressable-boxes">
-            <div class="box"></div>
+            <!-- images inside box index -->
+            <div class="box-index"></div>
             <div class="underbox">
                 <a>all inclusive vacations</a>
             </div>
-            <div class="box"></div>
+            <div class="box-index"></div>
             <div class="underbox">
                 <a>travel by plane</a>
             </div>
-            <div class="box"></div>
+            <div class="box-index"></div>
             <div class="underbox">
                 <a></a>
             </div>
