@@ -135,6 +135,18 @@ h1 {
 }
 
 /* end of nav bar */
+/* start van user dashboard -deniz*/
+.container-text-header{
+    height: 110px;
+    width: 100%;
+}
+.container-dashboard{
+    background-color: #2F2B47;
+    display: flex;
+    height: 110px;
+    width: 100%;
+}
+/* einde van user dashboard*/
 
 /* start of middle banner and top part index en under part -deniz*/
 .image-homepage{
