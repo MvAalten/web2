@@ -34,17 +34,23 @@
         </div>
         <div class="container-under-part-pressable-boxes">
             <!-- images inside box index -->
-            <div class="box-index"></div>
-            <div class="underbox">
-                <a>all inclusive vacations</a>
+            <div class="box-index">
+                    <img class="image-homepage" src="\assets\image1homepage.png">
+                <div class="underbox">
+                    <a class="text-image-box-under">all inclusive vacations</a>
+                </div>
             </div>
-            <div class="box-index"></div>
-            <div class="underbox">
-                <a>travel by plane</a>
+            <div class="box-index">
+                    <img href class="image-homepage" src="\assets\image2homepage.png">
+                <div class="underbox">
+                    <a class="text-image-box-under">travel by plane</a>
+                </div>
             </div>
-            <div class="box-index"></div>
-            <div class="underbox">
-                <a></a>
+            <div class="box-index">
+                    <img class="image-homepage" src="\assets\image3homepage.png">
+                <div class="underbox">
+                    <a class="text-image-box-under">camping vacations</a>
+                </div>
             </div>
         </div>
      </main>
