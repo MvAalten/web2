@@ -38,14 +38,13 @@ if (!isset($_SESSION["user"])){
             </div>
         </section>
         <section class="form-section">
-            <h2>Login Form</h2>
-            <form class="form-extra" action='login_logic.php' name='login' method="POST">
-                <label><p>Gebruikersnaam:</p></label>
-                <input type="text" name="username" placeholder="gebruikersnaam" required class="username-log">
-                <label><p>Wachtwoord:</p></label>
-                <input type="password" name="password" placeholder="wachtwoord" required class="password-log">
-                <input type="submit" value="Login" class="button-log">  
-            </form>
+            <h2>Update Form</h2>
+            <form action='user_delete_logic.php' name='user_delete_logic.php' method="post">
+                    <label> User delete: </label>
+                    <br>
+                    <input type="text" name="user_id" placeholder="id delete" required>
+                    <input type="submit" value="Delete">
+                 </form>
         </section>
     </main>
 </body>
