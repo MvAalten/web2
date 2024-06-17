@@ -11,7 +11,6 @@
     </head>
     <body>
         <!-- SQl code hier neergezet voor later gebruik -->
-        <!-- !!!!BELANGRIJK!!!! -->
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
     <?php
      include('../includes/nav.php')
