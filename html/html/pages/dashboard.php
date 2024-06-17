@@ -18,24 +18,36 @@ if (!isset($_SESSION["user"])){
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-<<<<<<< Updated upstream
-    <div class="container">
-
-    </div>
-=======
 <?php
         include('../includes/nav.php')
     ?>
-    <main>
-        <form class="form-extra" action='login_logic.php' name='login' method="POST">
-            <label> <p>Gebruikersnaam:</p></label>
-            <input type="text" name="username" placeholder="gebruikersnaam" required class="username-log">
-            <label><p>Wachtwoord:</p></label>
-            <input type="password" name="password" placeholder="wachtwoord" required class="password-log">
-            <input type="submit" value="Login" class="button-log">  
-        </form>
+    <main class="dashboard">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <section class="stats">
+            <div class="stat">
+                <h2>Users</h2>
+                <p>150</p>
+            </div>
+            <div class="stat">
+                <h2>Posts</h2>
+                <p>300</p>
+            </div>
+            <div class="stat">
+                <h2>Comments</h2>
+                <p>1200</p>
+            </div>
+        </section>
+        <section class="form-section">
+            <h2>Login Form</h2>
+            <form class="form-extra" action='login_logic.php' name='login' method="POST">
+                <label><p>Gebruikersnaam:</p></label>
+                <input type="text" name="username" placeholder="gebruikersnaam" required class="username-log">
+                <label><p>Wachtwoord:</p></label>
+                <input type="password" name="password" placeholder="wachtwoord" required class="password-log">
+                <input type="submit" value="Login" class="button-log">  
+            </form>
+        </section>
     </main>
->>>>>>> Stashed changes
 </body>
 </html>
 

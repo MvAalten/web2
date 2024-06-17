@@ -578,5 +578,89 @@ main{
     height: 200px;
 }
 /* hier begint dashboard ADMIN */
+/* General styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1, h2, p {
+    color: #333;
+}
+
+/* Main dashboard styles */
+.dashboard {
+    padding: 20px;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.stat h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.stat p {
+    font-size: 2em;
+    margin: 10px 0 0;
+}
+
+/* Form styles */
+.form-section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-extra label p {
+    margin: 0 0 5px;
+}
+
+.form-extra input[type="text"],
+.form-extra input[type="password"] {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-extra .button-log {
+    background-color: #333;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.form-extra .button-log:hover {
+    background-color: #555;
+}
 
 /* hier begint dashboard ADMIN */
