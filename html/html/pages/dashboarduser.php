@@ -25,5 +25,5 @@ if (!isset($_SESSION["user"])){
     </div>
 </body>
 </html>
-<!-- kleine oopsie aan mees zn kant -->
+
 
