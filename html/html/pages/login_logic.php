@@ -25,7 +25,7 @@ $_SESSION["user"] = $username;
     if($user["usertype"]=="user")
     {
         $_SESSION['usertype'] = $user['user'];
-        header("location: user_home.php" );
+        header("location: dashboarduser.php" );
     }
     elseif($user["usertype"]=="admin")
     {
