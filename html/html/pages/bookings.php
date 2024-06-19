@@ -25,7 +25,12 @@
             </div>
             <div class="lower">
                 <a href="#" class="filter-box">
-                    
+                    <div class="text-container">
+                        <div class="name"></div>
+                        <div class="place"></div>
+                        <div class="price"></div>
+                    </div>
+                    <div class="photo-container-bookings"></div>
                 </a>
                 <a href="#" class="filter-box">
                     

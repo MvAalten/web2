@@ -335,9 +335,48 @@ main{
     flex-direction: column;
 }
 .filter-box{
+    display: flex;
     width: 98%;
     height: 130px;
-    background-color: rgb(195, 195, 195);
+    background-color: rgba(195, 195, 195, 0.384);
+    justify-content: center;
+    align-items: center;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #6c729957;
+}
+.name{
+    display: flex;
+    width: 90%;
+    height: 33%;
+    justify-content: space-between;
+    align-items: center;
+}
+.place{
+    display: flex;
+    width: 90%;
+    height: 33%;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    display: flex;
+    width: 90%;
+    height: 33%;
+    justify-content: center;
+    align-items: center;
+}
+.photo-container-bookings{
+    display: flex;
+    width: 45%;
+    height: 90%;
 }
 .middle-lower-body{
     width: 85%;
