@@ -145,9 +145,14 @@ h1 {
     height: 110px;
     width: 100%;
 }
-.form-flights{
+.people-amount{
+    width: 32px;
+}
+.form-column{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }
 .container-text-header {
     display: flex;

@@ -26,7 +26,9 @@ if (!isset($_SESSION["user"])){
         <section class="stats">
             <div class="stat">
                 <h2>Users</h2>
-                <p>150</p>
+                <?php
+                
+                ?>
             </div>
             <div class="stat">
                 <h2>Posts</h2>
@@ -39,35 +41,37 @@ if (!isset($_SESSION["user"])){
         </section>
         <section class="form-section">
             <h2>Update Form</h2>
-            <form action='user_delete_logic.php' name='user_delete_logic.php' method="post">
-                    <label> User delete: </label>
+            <form class="form-column"  action='all_delete_logic.php' name='all_delete_logic.php' method="post">
+                    <label> all delete: </label>
                     <br>
-                    <input type="text" name="user_id" placeholder="id delete" required>
+                    <input type="text" name="user_id" placeholder="user id delete" required>
+                    <input type="submit" value="Delete">
+                    <input type="text" name="flights_id" placeholder="flights id delete" required>
+                    <input type="submit" value="Delete">
+                    <input type="text" name="accommodations_id" placeholder="accommodations id delete" required>
                     <input type="submit" value="Delete">
                  </form>
         </section>
         <section class="form-section">
             <h2>Add flights</h2>
-            <form class="form-flights" action='add_flights_logic.php' name='add_flights_logic.php' method="post">
+            <form class="form-column" action='add_flights_logic.php' name='add_flights_logic.php' method="post">
                     <label> Add flights: </label>
                     <br>
                     <input type="text" name="name" placeholder="naam" required>
                     <input type="text" name="vertrek_punt" placeholder="vertrek punt" required>
                     <input type="text" name="aankomst_punt" placeholder="aankomst punt" requiredd>
-                    <input type="submit" value="Register">
-
-                 </form>
-<!-- 
-                 <div class="login-form">
-                        <form class="form-extra" action='register_logic.php' name='register_logic' method="post">
-                        <label class="coloring"> Username: </label>  
-                        <input class="username-log" type="text" name="username" placeholder="Username" required>
-                        <label class="coloring"> Password: </label>  
-                        <input class="password-log" type="password" name="password" placeholder="Password" required>
-                        <label class="coloring"> email: </label>  
-                        <input class="type-log-workout2" type="email" name="email" placeholder="email" required>
-                        <input class="button-log" type="submit" value="Register">
-                    </div> -->
+                    <input type="submit" value="Upload">
+                </form>
+        </section>
+        <section class="form-section">
+            <h2>Add accommodations</h2>
+            <form class="form-column" action='locations_logic.php' name='locations_logic.php' method="post">
+                    <label> Add accommodations: </label>
+                    <br>
+                    <input class="people-amount" type="number" name="mensen" placeholder="1" required>
+                    <input type="text" name="vervoer" placeholder="vervoer" required>
+                    <input type="submit" value="Upload">
+                </form>
         </section>
     </main>
 </body>
