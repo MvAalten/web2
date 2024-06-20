@@ -46,6 +46,29 @@ if (!isset($_SESSION["user"])){
                     <input type="submit" value="Delete">
                  </form>
         </section>
+        <section class="form-section">
+            <h2>Add flights</h2>
+            <form class="form-flights" action='add_flights_logic.php' name='add_flights_logic.php' method="post">
+                    <label> Add flights: </label>
+                    <br>
+                    <input type="text" name="name" placeholder="naam" required>
+                    <input type="text" name="vertrek_punt" placeholder="vertrek punt" required>
+                    <input type="text" name="aankomst_punt" placeholder="aankomst punt" requiredd>
+                    <input type="submit" value="Register">
+
+                 </form>
+<!-- 
+                 <div class="login-form">
+                        <form class="form-extra" action='register_logic.php' name='register_logic' method="post">
+                        <label class="coloring"> Username: </label>  
+                        <input class="username-log" type="text" name="username" placeholder="Username" required>
+                        <label class="coloring"> Password: </label>  
+                        <input class="password-log" type="password" name="password" placeholder="Password" required>
+                        <label class="coloring"> email: </label>  
+                        <input class="type-log-workout2" type="email" name="email" placeholder="email" required>
+                        <input class="button-log" type="submit" value="Register">
+                    </div> -->
+        </section>
     </main>
 </body>
 </html>

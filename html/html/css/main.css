@@ -145,7 +145,10 @@ h1 {
     height: 110px;
     width: 100%;
 }
-
+.form-flights{
+    display: flex;
+    flex-direction: column;
+}
 .container-text-header {
     display: flex;
     align-items: center;
