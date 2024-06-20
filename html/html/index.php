@@ -21,7 +21,8 @@
         <div class="top-part-container-index">
             <div class="top-part-left">
                 <div class="text-ideale-vakantie">Find your ideal vacation!</div>
-                <button href="#" class="zoeken-index"><a class="zoek-button-text">Zoeken!</a></button>
+                <!-- button href broken must be fixed -deniz -->
+                <button href="../pages/bookings.php" class="zoeken-index"><a class="zoek-button-text">Zoeken!</a></button>
             </div>
             <div class="top-part-right">
                 <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
