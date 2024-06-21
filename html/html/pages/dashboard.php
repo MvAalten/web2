@@ -26,7 +26,9 @@ if (!isset($_SESSION["user"])){
         <section class="stats">
             <div class="stat">
                 <h2>Users</h2>
-                <p>150</p>
+                <?php
+                
+                ?>
             </div>
             <div class="stat">
                 <h2>Posts</h2>
@@ -39,12 +41,37 @@ if (!isset($_SESSION["user"])){
         </section>
         <section class="form-section">
             <h2>Update Form</h2>
-            <form action='user_delete_logic.php' name='user_delete_logic.php' method="post">
-                    <label> User delete: </label>
+            <form class="form-column"  action='all_delete_logic.php' name='all_delete_logic.php' method="post">
+                    <label> all delete: </label>
                     <br>
-                    <input type="text" name="user_id" placeholder="id delete" required>
+                    <input type="text" name="user_id" placeholder="user id delete" required>
+                    <input type="submit" value="Delete">
+                    <input type="text" name="flights_id" placeholder="flights id delete" required>
+                    <input type="submit" value="Delete">
+                    <input type="text" name="accommodations_id" placeholder="accommodations id delete" required>
                     <input type="submit" value="Delete">
                  </form>
+        </section>
+        <section class="form-section">
+            <h2>Add flights</h2>
+            <form class="form-column" action='add_flights_logic.php' name='add_flights_logic.php' method="post">
+                    <label> Add flights: </label>
+                    <br>
+                    <input type="text" name="name" placeholder="naam" required>
+                    <input type="text" name="vertrek_punt" placeholder="vertrek punt" required>
+                    <input type="text" name="aankomst_punt" placeholder="aankomst punt" requiredd>
+                    <input type="submit" value="Upload">
+                </form>
+        </section>
+        <section class="form-section">
+            <h2>Add accommodations</h2>
+            <form class="form-column" action='locations_logic.php' name='locations_logic.php' method="post">
+                    <label> Add accommodations: </label>
+                    <br>
+                    <input class="people-amount" type="number" name="mensen" placeholder="1" required>
+                    <input type="text" name="vervoer" placeholder="vervoer" required>
+                    <input type="submit" value="Upload">
+                </form>
         </section>
     </main>
 </body>
