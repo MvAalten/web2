@@ -1,7 +1,8 @@
 <?php
 session_start();
 include 'conn.php';
-if(empty($_POST['username']) || empty($_POST['password'])){
+
+if (empty($_POST['username']) || empty($_POST['password'])) {
     header("Location: register.php");
     exit();
 }
@@ -13,26 +14,24 @@ $stmt = $connection->prepare("SELECT * FROM users WHERE username=:user AND passw
 $stmt->execute(['user' => $username, 'pass' => $password]);
 $user = $stmt->fetch();
 
+if (!empty($user)) {
+    $_SESSION["user"] = $username;
 
-if (!empty($user)){
-$_SESSION["user"] = $username;
-    header ("Location: dashboard.php");
-    } 
-    else{
-        header("Location: over_ons.php");
+    // Controleer de usertype en stuur door naar de juiste dashboard
+    if ($user["usertype"] == "user") {
+        $_SESSION['usertype'] = 'user';
+        header("Location: dashboarduser.php");
+        exit();
+    } elseif ($user["usertype"] == "admin") {
+        $_SESSION['usertype'] = 'admin';
+        header("Location: dashboard.php");
+        exit();
+    } else {
+        echo "Onbekende gebruikersrol.";
+        exit();
     }
-
-    if($user["usertype"]=="user")
-    {
-        $_SESSION['usertype'] = $user['user'];
-        header("location: dashboarduser.php" );
-    }
-    elseif($user["usertype"]=="admin")
-    {
-        $_SESSION['usertype'] = $user['admin'];
-        header("location: dashboard.php");
-    }
-    else{
-        echo "fout";
-    }
+} else {
+    header("Location: over_ons.php");
+    exit();
+}
 ?>
