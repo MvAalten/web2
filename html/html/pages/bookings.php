@@ -8,57 +8,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
     <?php
      include('../includes/nav.php')
     ?>
-    <div class="lower-body">
-        <div class="lower-body-left">
-            <div class="upper">
-
+    <div class="destinations">
+        <div class="container-destination-row">
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
             </div>
-            <a>Bookings</a>
-            <div class="small-line">
-                    
+            <div class="container-destination-row">
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
             </div>
-            <div class="lower">
-                <a href="#" class="filter-box">
-                    <div class="text-container">
-                        <div class="name"></div>
-                        <div class="place"></div>
-                        <div class="price"></div>
-                    </div>
-                    <div class="photo-container-bookings"></div>
-                </a>
-                <a href="#" class="filter-box">
-                </a>
-                <a href="#" class="filter-box">
-                </a>
-                <a href="#" class="filter-box">
-                </a>
-                
+            <div class="container-destination-row">
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
             </div>
-            
-        </div>
-        <div class="line">
-
-        </div>
-        <div class="lower-body-right">
-            <div class="middle-lower-body">
-                <div class="left-middle-lower-body">
-                    <div class="box">
-                    </div>
-                </div>
-                <div class="right-lower-body-box">
-                    <div class="space">
-                    </div>
-                    <div class="button-see-more-index">
-                        <a>See more</a>
-                    </div>
-                </div>
+            <div class="container-destination-row">
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
+                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
             </div>
-        </div>
+    </div>
     </body>
     </html>

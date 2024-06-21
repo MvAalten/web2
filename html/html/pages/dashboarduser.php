@@ -18,52 +18,9 @@ if (!isset($_SESSION["user"])) {
     <link rel="stylesheet" href="../css/user_dashboard.css">
 </head>
 <body>
-    <?php include('includes/nav.php'); ?>
-
-    <main>
-        <div class="container-user-dashboard">
-            <div class="container-text-header">
-                <div class="text-header-user-dashboard">User Dashboard</div>
-            </div>
-        </div>
-
-        <div class="top-part-container-index">
-            <div class="top-part-left">
-                <div class="text-ideale-vakantie">Find your ideal vacation!</div>
-                <button class="zoeken-index"><a class="zoek-button-text">Zoeken!</a></button>
-            </div>
-            <div class="top-part-right">
-                <div class="top-part-right-text-above-image">Take that break take that vacation!</div>
-                <img src="\assets\halfiphone.png" class="top-part-right-image">
-            </div>
-        </div>
-
-        <div class="middle-banner">
-            <a class="text-middle-banner">Find your ideal vacation!</a>
-        </div>
-
-        <div class="container-under-part-pressable-boxes">
-            <div class="box-index">
-                <img class="image-homepage" src="\assets\image1homepage.png">
-                <div class="underbox">
-                    <a class="text-image-box-under">All Inclusive Vacations</a>
-                </div>
-            </div>
-            <div class="box-index">
-                <img class="image-homepage" src="\assets\image2homepage.png">
-                <div class="underbox">
-                    <a class="text-image-box-under">Travel by Plane</a>
-                </div>
-            </div>
-            <div class="box-index">
-                <img class="image-homepage" src="\assets\image3homepage.png">
-                <div class="underbox">
-                    <a class="text-image-box-under">Camping Vacations</a>
-                </div>
-            </div>
-        </div>
-
-    </main>
+<?php
+        include('../includes/nav.php')
+    ?>
 </body>
 </html>
 
