@@ -17,7 +17,7 @@
     <div class="login">
             <div class="feedback-container">
                 <a class="feedback-top-text">Share your Feedback!</a>
-            <div class="login-form">
+            <div class="">
                         <form class="" action='' name='' method="post">
                         <label class="coloring">Name:</label>  
                         <input class="username-log" type="text" name="name" placeholder="Username" required>

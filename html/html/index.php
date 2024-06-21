@@ -22,7 +22,7 @@
             <div class="top-part-left">
                 <div class="text-ideale-vakantie">Find your ideal vacation!</div>
                 <!-- button href broken must be fixed -deniz -->
-                <button href="../pages/bookings.php" class="zoeken-index"><a class="zoek-button-text">Zoeken!</a></button>
+                <a href="../pages/bookings.php" class="zoeken-index">Zoeken!</a>
             </div>
             <div class="top-part-right">
                 <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
@@ -38,19 +38,19 @@
             <div class="box-index">
                     <img class="image-homepage" src="\assets\image1homepage.png">
                 <div class="underbox">
-                    <a class="text-image-box-under">all inclusive vacations</a>
+                    <a href="../pages/bookings.php" class="text-image-box-under">all inclusive vacations</a>
                 </div>
             </div>
             <div class="box-index">
                     <img href class="image-homepage" src="\assets\image2homepage.png">
                 <div class="underbox">
-                    <a class="text-image-box-under">travel by plane</a>
+                    <a href="../pages/bookings.php" class="text-image-box-under">travel by plane</a>
                 </div>
             </div>
             <div class="box-index">
                     <img class="image-homepage" src="\assets\image3homepage.png">
                 <div class="underbox">
-                    <a class="text-image-box-under">camping vacations</a>
+                    <a href="../pages/bookings.php" class="text-image-box-under">camping vacations</a>
                 </div>
             </div>
         </div>
