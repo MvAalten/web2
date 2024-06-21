@@ -33,13 +33,10 @@
                     <div class="photo-container-bookings"></div>
                 </a>
                 <a href="#" class="filter-box">
-                    
                 </a>
                 <a href="#" class="filter-box">
-                    
                 </a>
                 <a href="#" class="filter-box">
-                    
                 </a>
                 
             </div>

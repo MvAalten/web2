@@ -15,7 +15,8 @@
      include('../includes/nav.php')
     ?>
     <div class="login">
-            <div class="login-container">
+            <div class="feedback-container">
+                <a class="feedback-top-text">Share your Feedback!</a>
             <div class="login-form">
                         <form class="" action='' name='' method="post">
                         <label class="coloring">Name:</label>  
@@ -23,7 +24,7 @@
                         <label class="coloring"> E-Mail:</label>  
                         <input class="password-log" type="email" name="email" placeholder="email" required>
                         <label class="coloring"> Feedback:</label>  
-                        <input class="type-log-workout2" type="text" name="message" placeholder="message" required>
+                        <input class="message-log" type="text" name="message" placeholder="message" required>
                         <input class="button-log" type="submit" value="Submit">
                     </div>
             </div>
