@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'conn.php';
 if (!isset($_SESSION["user"])){
     header("Location: login.php");
     exit();
@@ -26,9 +27,7 @@ if (!isset($_SESSION["user"])){
         <section class="stats">
             <div class="stat">
                 <h2>Users</h2>
-                <?php
-                
-                ?>
+
             </div>
             <div class="stat">
                 <h2>Posts</h2>
@@ -40,7 +39,7 @@ if (!isset($_SESSION["user"])){
             </div>
         </section>
         <section class="form-section">
-            <h2>Update Form</h2>
+            <h2>Delete Form</h2>
             <form class="form-column"  action='all_delete_logic.php' name='all_delete_logic.php' method="post">
                     <label> all delete: </label>
                     <br>
@@ -73,6 +72,27 @@ if (!isset($_SESSION["user"])){
                     <input type="submit" value="Upload">
                 </form>
         </section>
+                <section class="form-section">
+            <h2>User update form</h2>
+            <form action='update_logic.php' name='update_logic.php' method="POST">
+    <input type="hidden" id="custId" name="id">
+
+<form class="form-column" action='update_logic.php' name='update_logic.php' method="POST">
+    <input type="hidden" id="custId" name="id" >
+
+    <label>Username: </label>
+        <input type="text" name="username" placeholder="username"required>
+        <label>Password: </label>
+        <input type="text" name="password" placeholder="password" required>
+        <label>email: </label>
+        <input type="text" name="email" placeholder="email" required>
+        <label>user ID: </label>
+        <input type="text" name="user_id" placeholder="user ID" required>
+        <label>Usertype input admin or leave empty: </label>
+        <input type="text" name="usertype" placeholder="admin">
+        <input type="submit" value="update product">
+    </form>
+        </section>
     </main>
 </body>
 </html>
@@ -80,3 +100,18 @@ if (!isset($_SESSION["user"])){
 <!-- SELECT value_to_be_shown, value_to_be_shown, value_to_be_shown, value_to_be_shown
 FROM tabel_name INNER JOIN tabel_name
 ON tabel_name.id = tabel_name.id; -->
+
+
+<form action='update_logic.php' name='update_logic.php' method="POST">
+    <input type="hidden" id="custId" name="id" value= "<?php echo $users['id']; ?>">
+
+    <label>Username: </label>
+        <input type="text" name="username" value= "<?php echo $users['username']; ?>" required>
+        <label>Password: </label>
+        <input type="text" name="password" value= "<?php echo $users['password']; ?>" required>
+        <label>email: </label>
+        <input type="text" name="email" value= "<?php echo $users['email']; ?>" required>
+        <label>email: </label>
+        <input type="text" name="usertype" value= "<?php echo $users['usertyped']; ?>" required>
+        <input type="submit" value="update product">
+    </form>

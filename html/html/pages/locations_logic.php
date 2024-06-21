@@ -3,7 +3,7 @@ session_start();
 include 'conn.php';
 
 $mensen = $_POST["mensen"];
-$vervoer = $_POST['vervoer'];
+$vervoer = $_POST["vervoer"];
 
 $stmt = $connection->prepare("INSERT INTO locations (mensen, vervoer) VALUES(:mensen, :vervoer)");
 $stmt->bindParam(":mensen", $mensen);
