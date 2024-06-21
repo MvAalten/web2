@@ -339,7 +339,7 @@ main{
     width: 98%;
     height: 130px;
     background-color: rgba(195, 195, 195, 0.384);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .text-container{
@@ -347,7 +347,7 @@ main{
     flex-direction: column;
     width: 45%;
     height: 95%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 5px;
     background-color: #6c729957;
@@ -377,6 +377,7 @@ main{
     display: flex;
     width: 45%;
     height: 90%;
+    background-color: #6c7299;
 }
 .middle-lower-body{
     width: 85%;
