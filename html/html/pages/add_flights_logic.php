@@ -12,7 +12,5 @@ $stmt->bindParam(":vertrek", $vertrek_punt);
 $stmt->bindParam(":aankomst", $aankomst_punt);
 $stmt->execute();
 
-
-
 header('Location: dashboard.php');
 ?>
