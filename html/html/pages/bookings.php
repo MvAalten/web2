@@ -16,32 +16,34 @@
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
     <?php
      include('../includes/nav.php')
-    ?>
-    <div class="destinations">
-        <div class="container-destination-row">
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-            </div>
-            <div class="container-destination-row">
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-            </div>
-            <div class="container-destination-row">
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-            </div>
-            <div class="container-destination-row">
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-                <div class="clickable-destination-image-a"><a class="button-booking">Book</a></div>
-            </div>
-    </div>
+
+     $stmt = $connection->query("SELECT * FROM locationsINNER JOIN flights ON flights.id=locations.id WHERE flights.id = $userID");
+     while ($row = $stmt->fetch()) {
+ 
+    
+ echo   <div class="destinations">
+     echo   <div class="container-destination-row">
+        echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo  </div>
+            echo    <div class="container-destination-row">
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo  </div>
+            echo    <div class="container-destination-row">
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo </div>
+            echo   <div class="container-destination-row">
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
+            echo </div>
+            echo </div>
+        }
+        ?>
     </body>
-    </html>
+</html>
