@@ -852,3 +852,7 @@ h1, h2, p {
     border-width: 1px;
     border-style: solid;
 }
+.big-box-for-reviews{
+    height: 200px;
+    text-align: start;
+}

@@ -15,7 +15,7 @@
 <body>
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
     <?php
-        include('includes/nav.php')
+        include('nav.php')
     ?>
     <div id="cookie-consent-banner" class="cookie-banner">
         <p>Wij gebruiken cookies om uw ervaring te verbeteren. Door onze site te gebruiken, gaat u akkoord met ons gebruik van cookies. <a href="cookie.php">Leer meer</a>.</p>
