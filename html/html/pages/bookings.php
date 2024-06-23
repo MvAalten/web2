@@ -17,7 +17,7 @@
     <?php
      include('../includes/nav.php')
 
-     $stmt = $connection->query("SELECT * FROM locationsINNER JOIN flights ON flights.id=locations.id WHERE flights.id = $userID");
+     $stmt = $connection->prepare("SELECT * FROM locations INNER JOIN flights ON flights.id = locations.id WHERE flights.id = :userID");
      while ($row = $stmt->fetch()) {
  
     

@@ -94,6 +94,28 @@ if (!isset($_SESSION["user"])){
     </form>
         </section>
     </main>
+    <?php
+
+            include("conn.php");
+
+            $sql = "SELECT * FROM users";
+            $stmt = $pdo->query($sql);
+
+            while($users = $stmt->fetch()) {
+                echo "
+                <tr class='users'>
+                    <td>$users[id]</td>
+                    <td>$users[username]</td>
+                    <td>$users[password] </td>
+                    <td>$users[email]</td>
+                    <td>
+                        <a class='btn' href='edit.php?id=$users[id]'>Edit</a>
+                        <a class='btn' href='delete.php?id=$users[id]'>Delete</a>
+                    </td>
+                </tr>
+                ";
+            }
+            ?>
 </body>
 </html>
 
