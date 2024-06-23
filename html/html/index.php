@@ -15,7 +15,7 @@
 <body>
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
     <?php
-        include('nav.php')
+        include('includes/nav.php')
     ?>
     <div id="cookie-consent-banner" class="cookie-banner">
         <p>Wij gebruiken cookies om uw ervaring te verbeteren. Door onze site te gebruiken, gaat u akkoord met ons gebruik van cookies. <a href="cookie.php">Leer meer</a>.</p>
@@ -25,15 +25,45 @@
     <script src="javascript/cookie.jsx"></script>
      <main>
         <div class="top-part-container-index">
-            <div class="top-part-left">
-                <div class="text-ideale-vakantie">Find your ideal vacation!</div>
-                <!-- button href broken must be fixed -deniz -->
-                <a href="../pages/bookings.php" class="zoeken-index">Zoeken!</a>
-            </div>
-            <div class="top-part-right">
-                <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
-                <div class="top-part-right-text-above-image">Take that break take that vacation!</div>
-                <img src="\assets\halfiphone.png" class="top-part-right-image">
+            <!-- ik leen dit even voor de search bar dankjewel (Amir) -->
+            <div class="searchbar-phone-container">
+                <div class="top-part-left">
+                    <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Zoek naar landen..">
+                    <ul id="placeName">
+                    <li><a href="/pages/bookings.php">Spanje</a></li>
+                    <li><a href="/pages/bookings.php">Kroatie</a></li>
+
+                    <li><a href="/pages/bookings.php">Argentinie</a></li>
+                    <li><a href="/pages/bookings.php">Brazilie</a></li>
+
+                    <li><a href="/pages/bookings.php">Japan</a></li>
+                    <li><a href="/pages/bookings.php">Indonesie</a></li>
+                    <li><a href="/pages/bookings.php">China</a></li>
+                    </ul>
+                    <script>
+                        function searchBar() {
+                            var input, filter, ul, li, a, i, txtValue;
+                            input = document.getElementById("myInput");
+                            filter = input.value.toUpperCase();
+                            ul = document.getElementById("placeName");
+                            li = ul.getElementsByTagName("li");
+
+                            for (i = 0; i < li.length; i++) {
+                                a = li[i].getElementsByTagName("a")[0];
+                                txtValue = a.textContent || a.innerText;
+                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                    li[i].style.display = "";
+                                } else {
+                                    li[i].style.display = "none";
+                                }
+                            }
+                        }
+                    </script>
+                    <div class="top-part-right">
+                    <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
+                    <div class="top-part-right-text-above-image">Take that break take that vacation!</div>
+                    <img src="\assets\halfiphone.png" class="top-part-right-image">
+                </div>
             </div>
         </div>    
         <div class="middle-banner">
