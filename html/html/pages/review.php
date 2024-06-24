@@ -1,3 +1,7 @@
+<?php
+    include('conn.php')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +20,7 @@
                     <label> Review: </label>
                     <br>
                     <input type="text" name="name" placeholder="naam" >
-                    <input class="big-box-for-reviews" type="text" name="review" placeholder="Review" required>
+                    <input class="big-box-for-reviews" type="text" name="review" placeholder="review" required>
                     <input type="submit" value="Upload">
                 </form>
         </section>
@@ -24,18 +28,13 @@
         <section class="form-section">
             <h2>Reviews</h2>
             <?php 
-            $sql = "SELECT * FROM reviews";
-            $stmt = $connection->query($sql);
-
-            while($reviews = $stmt->fetch()){
-                echo "
-                <tr class='reviews'>
-                    <td>$reviews[name]</td>
-                    <td>$reviews[review]</td>
-                    <td>"
-            ;}
-            
+            $stmt = $connection->query("SELECT * FROM reviews");
+            while ($row = $stmt->fetch()) {
+               echo  $row['name'] ."<br />\n";
+               echo  $row['review'] ."<br />\n";
+            }
             ?>
+            
         </section>
 </body>
 </html>

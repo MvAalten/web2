@@ -1,3 +1,7 @@
+<?php
+     include('conn.php')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,37 +17,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <?php
+    include('../includes/nav.php');
+    ?>
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
     <?php
-     include('../includes/nav.php')
-
-     $stmt = $connection->prepare("SELECT * FROM locations INNER JOIN flights ON flights.id = locations.id WHERE flights.id = :userID");
+     $stmt = $connection->query("SELECT * FROM locations");
      while ($row = $stmt->fetch()) {
- 
-    
- echo   <div class="destinations">
-     echo   <div class="container-destination-row">
-        echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo  </div>
-            echo    <div class="container-destination-row">
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo  </div>
-            echo    <div class="container-destination-row">
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo </div>
-            echo   <div class="container-destination-row">
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo '<a class="container-reizen" href="locations.php?id=' . $row['id'] . '">';
-            echo </div>
-            echo </div>
-        }
+        echo  $row['stad'] ."<br />\n";
+        echo  $row['land'] ."<br />\n";
+        echo  $row['mensen'] ."<br />\n";
+        echo  $row['vervoer'] ."<br />\n";
+     }
         ?>
+                <section class="form-section">
+            <?php
+        $stmt = $connection->query("SELECT * FROM locations");
+        while ($row = $stmt->fetch()) {
+        echo  $row['stad'] ."<br />\n";
+        echo  $row['land'] ."<br />\n";
+        echo  $row['mensen'] ."<br />\n";
+        echo  $row['vervoer'] ."<br />\n";
+     }
+        ?>
+        </section>
     </body>
 </html>
