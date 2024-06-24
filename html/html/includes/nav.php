@@ -24,7 +24,7 @@
             <a href="../index.php">Home</a>
             <a href="../pages/bookings.php">Bookings</a>
             <a href="../pages/over_ons.php">Over ons</a>
-            <a href="../pages/feedback.php">Feedback</a>
+            <a href="../pages/review.php">Feedback</a>
         </div>
         <div class="container-login-register">
             <div class="nav-right-login">
