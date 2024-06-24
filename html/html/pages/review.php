@@ -15,7 +15,7 @@
 
     ?>
         <section class="form-section">
-            <h2>Review our services</h2>
+            <h2>Schrijf een recensie!</h2>
             <form class="form-column" action='push_reviews.php' name='push_reviews.php' method="post">
                     <label> Review: </label>
                     <br>
