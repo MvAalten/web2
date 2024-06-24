@@ -69,6 +69,8 @@ if (!isset($_SESSION["user"])){
                     <br>
                     <input class="people-amount" type="number" name="mensen" placeholder="1" required>
                     <input type="text" name="vervoer" placeholder="vervoer" required>
+                    <input type="text" name="stad" placeholder="stad" required>
+                    <input type="text" name="land" placeholder="land" required>
                     <input type="submit" value="Upload">
                 </form>
         </section>
@@ -94,46 +96,9 @@ if (!isset($_SESSION["user"])){
     </form>
         </section>
     </main>
-    <?php
-
-            include("conn.php");
-
-            $sql = "SELECT * FROM users";
-            $stmt = $pdo->query($sql);
-
-            while($users = $stmt->fetch()) {
-                echo "
-                <tr class='users'>
-                    <td>$users[id]</td>
-                    <td>$users[username]</td>
-                    <td>$users[password] </td>
-                    <td>$users[email]</td>
-                    <td>
-                        <a class='btn' href='edit.php?id=$users[id]'>Edit</a>
-                        <a class='btn' href='delete.php?id=$users[id]'>Delete</a>
-                    </td>
-                </tr>
-                ";
-            }
-            ?>
 </body>
 </html>
 
 <!-- SELECT value_to_be_shown, value_to_be_shown, value_to_be_shown, value_to_be_shown
 FROM tabel_name INNER JOIN tabel_name
 ON tabel_name.id = tabel_name.id; -->
-
-
-<form action='update_logic.php' name='update_logic.php' method="POST">
-    <input type="hidden" id="custId" name="id" value= "<?php echo $users['id']; ?>">
-
-    <label>Username: </label>
-        <input type="text" name="username" value= "<?php echo $users['username']; ?>" required>
-        <label>Password: </label>
-        <input type="text" name="password" value= "<?php echo $users['password']; ?>" required>
-        <label>email: </label>
-        <input type="text" name="email" value= "<?php echo $users['email']; ?>" required>
-        <label>email: </label>
-        <input type="text" name="usertype" value= "<?php echo $users['usertyped']; ?>" required>
-        <input type="submit" value="update product">
-    </form>
