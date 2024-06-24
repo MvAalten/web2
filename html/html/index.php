@@ -23,19 +23,7 @@
         </div>
         <button onclick="myFunction()">Accept</button>
     </div>
-
-    <script>
-        function myFunction() {
-        var x = document.getElementById("cookie-consent-banner");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-        }
-    </script>
-
-    <script src="javascript/cookie.jsx"></script>
+    <script src="/pages/cookie.jsx"></script>
      <main>
      <div class="searchbar-phone-container">
                 
@@ -51,25 +39,8 @@
                     <li><a href="/pages/bookings.php">Indonesie</a></li>
                     <li><a href="/pages/bookings.php">China</a></li>
                     </ul>
-                    <script>
-                        function searchBar() {
-                            var input, filter, ul, li, a, i, txtValue;
-                            input = document.getElementById("myInput");
-                            filter = input.value.toUpperCase();
-                            ul = document.getElementById("placeName");
-                            li = ul.getElementsByTagName("li");
+                    <script src="pages/search_bar.jsx"></script>
 
-                            for (i = 0; i < li.length; i++) {
-                                a = li[i].getElementsByTagName("a")[0];
-                                txtValue = a.textContent || a.innerText;
-                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                    li[i].style.display = "";
-                                } else {
-                                    li[i].style.display = "none";
-                                }
-                            }
-                        }
-                    </script>
                     <div class="top-part-left">
         <div class="top-part-container-index">
                     <div class="top-part-right">
