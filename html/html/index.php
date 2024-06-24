@@ -18,16 +18,27 @@
         include('includes/nav.php')
     ?>
     <div id="cookie-consent-banner" class="cookie-banner">
-        <p>Wij gebruiken cookies om uw ervaring te verbeteren. Door onze site te gebruiken, gaat u akkoord met ons gebruik van cookies. <a href="cookie.php">Leer meer</a>.</p>
-        <button id="accept-cookies">Accept</button>
+        <p>Wij gebruiken cookies om uw ervaring te verbeteren. Door onze site te gebruiken, gaat u akkoord met ons gebruik van cookies. <a href="pages/cookie.php">Leer meer</a>.</p>
+        <div id="cookie-consent-banner">
+        </div>
+        <button onclick="myFunction()">Accept</button>
     </div>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("cookie-consent-banner");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        }
+    </script>
 
     <script src="javascript/cookie.jsx"></script>
      <main>
-        <div class="top-part-container-index">
-            <!-- ik leen dit even voor de search bar dankjewel (Amir) -->
-            <div class="searchbar-phone-container">
-                <div class="top-part-left">
+     <div class="searchbar-phone-container">
+                
                     <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Zoek naar landen..">
                     <ul id="placeName">
                     <li><a href="/pages/bookings.php">Spanje</a></li>
@@ -59,6 +70,8 @@
                             }
                         }
                     </script>
+                    <div class="top-part-left">
+        <div class="top-part-container-index">
                     <div class="top-part-right">
                     <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
                     <div class="top-part-right-text-above-image">Take that break take that vacation!</div>

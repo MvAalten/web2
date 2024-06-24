@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     acceptButton.addEventListener('click', function () {
-        setCookie('cookieConsent', 'cookies van Jochem', 365);
+        setCookie('cookieConsent', 'cookies', 365);
         cookieBanner.style.display = 'none';
     });
   
