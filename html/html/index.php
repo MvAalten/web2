@@ -45,32 +45,32 @@
         <div class="top-part-container-index">
                     <div class="top-part-right">
                     <!-- hier moet een image en daarboven moet een text zie figma (home) -deniz -->
-                    <div class="top-part-right-text-above-image">Take that break take that vacation!</div>
+                    <div class="top-part-right-text-above-image">Neem die pauze, neem die vakantie!</div>
                     <img src="\assets\halfiphone.png" class="top-part-right-image">
                 </div>
             </div>
         </div>    
         <div class="middle-banner">
-            <a class="text-middle-banner">Find your ideal vacation!</a>
+            <a class="text-middle-banner">Vind jouw ideale vakantie!</a>
         </div>
         <div class="container-under-part-pressable-boxes">
             <!-- images inside box index -->
             <div class="box-index">
                     <img class="image-homepage" src="\assets\image1homepage.png">
                 <div class="underbox">
-                    <a href="../pages/bookings.php" class="text-image-box-under">all inclusive vacations</a>
+                    <a href="../pages/bookings.php" class="text-image-box-under">All-inclusive vakanties!</a>
                 </div>
             </div>
             <div class="box-index">
                     <img href class="image-homepage" src="\assets\image2homepage.png">
                 <div class="underbox">
-                    <a href="../pages/bookings.php" class="text-image-box-under">travel by plane</a>
+                    <a href="../pages/bookings.php" class="text-image-box-under">Reis met de vliegtuig</a>
                 </div>
             </div>
             <div class="box-index">
                     <img class="image-homepage" src="\assets\image3homepage.png">
                 <div class="underbox">
-                    <a href="../pages/bookings.php" class="text-image-box-under">camping vacations</a>
+                    <a href="../pages/bookings.php" class="text-image-box-under">Kampeer vakanties</a>
                 </div>
             </div>
         </div>
