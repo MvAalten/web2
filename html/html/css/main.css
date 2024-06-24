@@ -841,8 +841,10 @@ h1, h2, p {
 }
 
 /* hier begint dashboard ADMIN */
-
-
+.big-box{
+    display: flex;
+    flex-direction: row;
+}
 /* bookings css */
 .destinations{
     display: flex;

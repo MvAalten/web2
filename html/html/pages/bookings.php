@@ -21,25 +21,18 @@
     include('../includes/nav.php');
     ?>
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
-    <?php
-     $stmt = $connection->query("SELECT * FROM locations");
-     while ($row = $stmt->fetch()) {
-        echo  $row['stad'] ."<br />\n";
-        echo  $row['land'] ."<br />\n";
-        echo  $row['mensen'] ."<br />\n";
-        echo  $row['vervoer'] ."<br />\n";
-     }
-        ?>
-                <section class="form-section">
+    <section class="big-box">
             <?php
         $stmt = $connection->query("SELECT * FROM locations");
         while ($row = $stmt->fetch()) {
+        echo    '<section class="form-section">';
         echo  $row['stad'] ."<br />\n";
         echo  $row['land'] ."<br />\n";
         echo  $row['mensen'] ."<br />\n";
         echo  $row['vervoer'] ."<br />\n";
+        echo '</section>';
      }
         ?>
-        </section>
+    </section>
     </body>
 </html>
