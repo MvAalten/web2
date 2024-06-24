@@ -21,6 +21,7 @@ if (!empty($user)) {
     if ($user["usertype"] == "user") {
         $_SESSION['usertype'] = 'user';
         header("Location: dashboarduser.php");
+        
         exit();
     } elseif ($user["usertype"] == "admin") {
         $_SESSION['usertype'] = 'admin';
