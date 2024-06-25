@@ -25,12 +25,14 @@
             <?php
         $stmt = $connection->query("SELECT * FROM locations");
         while ($row = $stmt->fetch()) {
-        echo    '<section class="form-section">';
+        echo  '<a class="container-reizen" href="bookings_page.php?id=' . $row['id'] . '">';
+        echo  '<div class="text-color-bookings-page">';
         echo  $row['stad'] ."<br />\n";
         echo  $row['land'] ."<br />\n";
         echo  $row['mensen'] ."<br />\n";
         echo  $row['vervoer'] ."<br />\n";
-        echo '</section>';
+        echo  '</div>';
+        echo '</a>';
      }
         ?>
     </section>
