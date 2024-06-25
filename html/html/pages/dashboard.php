@@ -24,7 +24,7 @@ if (!isset($_SESSION["user"])){
     ?>
     <main class="dashboard">
         <h1>Welcome to the Admin Dashboard</h1>
-        <section class="stats">
+        <!-- <section class="stats">
             <div class="stat">
                 <h2>Users</h2>
 
@@ -37,7 +37,7 @@ if (!isset($_SESSION["user"])){
                 <h2>Comments</h2>
                 <p>1200</p>
             </div>
-        </section>
+        </section> -->
         <section class="form-section">
             <h2>Delete Form</h2>
             <form class="form-column"  action='all_delete_logic.php' name='all_delete_logic.php' method="post">
