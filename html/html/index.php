@@ -29,15 +29,15 @@
                 
                     <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Zoek naar landen..">
                     <ul id="placeName">
-                    <li><a href="/pages/bookings.php">Spanje</a></li>
-                    <li><a href="/pages/bookings.php">Kroatie</a></li>
+                    <li><a href="/pages/bookings_page.php?id=4">Spanje</a></li>
+                    <li><a href="/pages/bookings_page.php?id=6">Kroatie</a></li>
 
-                    <li><a href="/pages/bookings.php">Argentinie</a></li>
-                    <li><a href="/pages/bookings.php">Brazilie</a></li>
+                    <li><a href="/pages/bookings_page.php?id=7">Argentinie</a></li>
+                    <li><a href="/pages/bookings_page.php?id=8">Brazilie</a></li>
 
-                    <li><a href="/pages/bookings.php">Japan</a></li>
-                    <li><a href="/pages/bookings.php">Indonesie</a></li>
-                    <li><a href="/pages/bookings.php">Oostenrijk</a></li>
+                    <li><a href="/pages/bookings_page.php?id=9">Japan</a></li>
+                    <li><a href="/pages/bookings_page.php?id=10">Indonesie</a></li>
+                    <li><a href="/pages/bookings_page.php?id=5">Oostenrijk</a></li>
                     </ul>
                     <script src="pages/search_bar.jsx"></script>
 
