@@ -37,7 +37,7 @@
 
                     <li><a href="/pages/bookings.php">Japan</a></li>
                     <li><a href="/pages/bookings.php">Indonesie</a></li>
-                    <li><a href="/pages/bookings.php">China</a></li>
+                    <li><a href="/pages/bookings.php">Oostenrijk</a></li>
                     </ul>
                     <script src="pages/search_bar.jsx"></script>
 
