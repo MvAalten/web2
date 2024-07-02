@@ -12,7 +12,7 @@ $options = [
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
 try{
-    $connection = new PDO ($dsn, $user, $pass, $options);
-    } catch (\PDOExceptions $e) {
+    $pdo = new PDO ($dsn, $user, $pass, $options);
+    } catch (\PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }

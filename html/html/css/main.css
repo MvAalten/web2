@@ -1261,3 +1261,14 @@ body {
     border-width: 0;
     cursor: pointer;
 }
+table{
+   display: flex;
+   width: auto;
+   height: auto;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.th-admin{
+    display: flex;
+    justify-content: space-evenly;
+}
