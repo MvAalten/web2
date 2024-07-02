@@ -20,46 +20,34 @@ $userID=$_GET['id'];
     
         WHERE locations.id = $userID");
         while ($row = $stmt->fetch()) {
-    echo '<div class="lower-body-extra-bookings">';
-    echo '<div class="name-bar">';
-    echo '<a class="text-country-and-city">land:';
-    echo '</a>';
-    echo '<div class="text-country-and-city">';
-    echo $row['land'] ."<br />\n";
-    echo '<br>';
-    echo '</div>';
-    echo '<a class="text-country-and-city">In deze plaats passen zo veel mensen:';
-    echo '</a>';
-    echo '<div class="text-country-and-city">';
-    echo $row['mensen'] ."<br />\n";
-    echo '<br>';
-    echo '<a class="text-country-and-city">stad:';
-    echo '</a>';
-    echo '</div>';
-    echo '</a>';
-    echo '</div>';
-    echo '<div class="name-bar">';
-    echo '<a class="text-country-and-city">U vliegt met vliegtuigmaatschappij:';
-    echo '</a>';
-    echo '<div class="text-country-and-city">';
-    echo $row['name'] ."<br />\n";
-    echo '<br>';
-    echo '</div>';
-    echo '<a class="text-country-and-city">Land van vertrek';
-    echo '</a>';
-    echo '<div class="text-country-and-city">';
-    echo $row['vertrek_punt'] ."<br />\n";
-    echo '</div>';
-    echo '<br>';
-    echo '<a class="text-country-and-city">Land van aankomst';
-    echo '</a>';
-    echo '<div class="text-country-and-city">';
-    echo $row['aankomst_punt'] ."<br />\n";
-    echo '</div>';
-    echo '</a>';
-    echo '</div>';
-    echo '</div>';
-            }
-    ?>
+echo '<div class="big-box-lower-bookings-page">';
+echo '    <div class="big-img-container">';
+echo '        <img class="booking-img" src="/assets/usable-img.jpg">';
+echo '    </div>';
+echo '    <div class="big-line-land"></div>';
+echo '    <div class="big-under-box">';
+echo '        <div class="left-box-under-img">';
+echo '            <p>uitgebrijde informatie:</p>';
+echo '            <br>';
+echo '            <br>';
+echo '            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus, enim in placerat tempor, nibh enim aliquam arcu, at facilisis metus lacus et ex. Aliquam erat volutpat. Nullam vitae rutrum arcu, quis cursus libero. Nulla fermentum mollis ligula, pellentesque blandit ligula laoreet nec. Proin ac mi ac felis laoreet congue ac quis metus. Curabitur tellus sem, suscipit sed dolor vitae, sagittis rhoncus ligula. Praesent aliquam imperdiet dui, in suscipit nisi imperdiet dignissim. In pharetra felis quis dapibus rutrum. Quisque fringilla ultricies magna, ut convallis leo molestie eu. Donec elementum, orci imperdiet euismod frin</p>';
+echo '        </div>';
+echo '        <div class="right-box-under-img">';
+echo '            <p>Basis informatie</p>';
+echo '            <br>';
+echo '            <br>';
+echo '            <p>Stad:</p>';
+echo '            ' . $row['stad'];
+echo '            <p>Land:</p>';
+echo '            ' . $row['land'];
+echo '            <p>Hoeveelheid:</p>';
+echo '            ' . $row['mensen'];
+echo '            <p>Vervoer:</p>';
+echo '            ' . $row['vervoer'];
+echo '        </div>';
+echo '    </div>';
+echo '</div>';
+}
+?>
 </body>
 </html>

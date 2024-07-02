@@ -21,20 +21,38 @@
     include('../includes/nav.php');
     ?>
     <!-- "SELECT * FROM users_data WHERE voornaam LIKE'%search%'"; -->
-    <section class="big-box">
-            <?php
-        $stmt = $connection->query("SELECT * FROM locations");
-        while ($row = $stmt->fetch()) {
-        echo  '<a class="container-reizen" href="bookings_page.php?id=' . $row['id'] . '">';
-        echo  '<div class="text-color-bookings-page">';
-        echo  $row['stad'] ."<br />\n";
-        echo  $row['land'] ."<br />\n";
-        echo  $row['mensen'] ."<br />\n";
-        echo  $row['vervoer'] ."<br />\n";
-        echo  '</div>';
-        echo '</a>';
-     }
-        ?>
-    </section>
+    <?php
+    $stmt = $connection->query("SELECT * FROM locations");
+    while ($row = $stmt->fetch()) {
+echo '<section class="big-box">';
+echo '    <div class="smaller-box" href="bookings_page.php?id=' . $row['id'] . '">';
+echo '        <div class="left-smaller-box">'; 
+echo  '<a href="bookings_page.php?id=' . $row['id'] . '">';
+echo '          <div class="booking-data-container">';
+echo '              <div class="booking-stad">';
+echo                    $row['stad'] . "<br />\n";
+echo '                  <p>Stad:</p>';
+echo '              </div>';
+echo '              <div class="booking-land">';
+echo                    $row['land'] . "<br />\n";
+echo '                  <p>Land:</p>';
+echo '              </div>';
+echo '              <div class="booking-mensen">';
+echo                    $row['mensen'] . "<br />\n";
+echo '                  <p>Hoeveelheid:</p>';
+echo '              </div>';
+echo '              <div class="booking-vervoer">';
+echo                    $row['vervoer'] . "<br />\n";
+echo '                  <p>Vervoer:</p>';
+echo '              </div>';
+echo '          </div>';
+echo '        </div>';
+echo '        <div class="right-smaller-box">';
+echo '            <img class="booking-img" src="/assets/usable-img.jpg">';
+echo '        </div>';
+echo '    </div>';
+echo '</section>';
+    }
+?>
     </body>
 </html>
