@@ -19,11 +19,96 @@ if (!isset($_SESSION["user"])){
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php
-        include('../includes/nav.php')
-    ?>
-    <main class="dashboard">
-        <h1>Welcome to the Admin Dashboard</h1>
+    <header>
+        <div class="balk">
+            <img src="\assets\logo.png" alt="" class="logo-dashboard-admin">
+            <a class="admin-dashboard-header-text">Admin Dashboard</a>
+        </div>
+        
+    </header>
+    <main class="dashboard-admin">
+        <div class="container-user-forms">
+        <form class="form-column" action='update_logic.php' name='update_logic.php' method="POST">
+        <h3>Delete account</h3>
+        <input type="hidden" id="custId" name="id" >
+        <input type="text" name="username" placeholder="username"required>
+        <input type="text" name="password" placeholder="password" required>
+        <input type="submit" value="Submit">
+        </form>
+
+        <form class="form-column" action='update_logic.php' name='update_logic.php' method="POST">
+        <input type="hidden" id="custId" name="id" >
+        <h3>Update account</h3>
+        <input type="text" name="username" placeholder="username"required>
+        <input type="text" name="password" placeholder="password" required>
+        <input class="button-admin-dashboard" type="submit" value="Submit">
+        </form>
+
+        <form class="form-column" action='update_logic.php' name='update_logic.php' method="POST">
+        <input type="hidden" id="custId" name="id" >
+        <label>Username: </label>
+        <input type="text" name="username" placeholder="username"required>
+        <label>Password: </label>
+        <input type="text" name="password" placeholder="password" required>
+        <label>email: </label>
+        <input type="text" name="email" placeholder="email" required>
+        <label>user ID: </label>
+        <input type="text" name="user_id" placeholder="user ID" required>
+        <label>Usertype input admin or leave empty: </label>
+        <input type="text" name="usertype" placeholder="admin">
+        <input class="button-admin-dashboard" type="submit" value="Submit">
+        </form>
+        </div>    
+
+        <div class="container-user-forms">
+            
+        <form class="form-column" action='update_logic.php' name='update_logic.php' method="POST">
+        <input type="hidden" id="custId" name="id" >
+        <label>Username: </label>
+        <input type="text" name="username" placeholder="username"required>
+        <label>Password: </label>
+        <input type="text" name="password" placeholder="password" required>
+        <label>email: </label>
+        <input type="text" name="email" placeholder="email" required>
+        <label>user ID: </label>
+        <input type="text" name="user_id" placeholder="user ID" required>
+        <label>Usertype input admin or leave empty: </label>
+        <input type="text" name="usertype" placeholder="admin">
+        <input class="button-admin-dashboard" type="submit" value="Submit">
+        </form>
+
+        <form class="form-column" action='update_logic.php' name='update_logic.php' method="POST">
+        <input type="hidden" id="custId" name="id" >
+        <label>Username: </label>
+        <input type="text" name="username" placeholder="username"required>
+        <label>Password: </label>
+        <input type="text" name="password" placeholder="password" required>
+        <label>email: </label>
+        <input type="text" name="email" placeholder="email" required>
+        <label>user ID: </label>
+        <input type="text" name="user_id" placeholder="user ID" required>
+        <label>Usertype input admin or leave empty: </label>
+        <input type="text" name="usertype" placeholder="admin">
+        <input class="button-admin-dashboard" type="submit" value="Submit">
+        </form>
+
+        <form class="form-column" action='update_logic.php' name='update_logic.php' method="POST">
+        <input type="hidden" id="custId" name="id" >
+        <label>Username: </label>
+        <input type="text" name="username" placeholder="username"required>
+        <label>Password: </label>
+        <input type="text" name="password" placeholder="password" required>
+        <label>email: </label>
+        <input type="text" name="email" placeholder="email" required>
+        <label>user ID: </label>
+        <input type="text" name="user_id" placeholder="user ID" required>
+        <label>Usertype input admin or leave empty: </label>
+        <input type="text" name="usertype" placeholder="admin">
+        <input class="button-admin-dashboard" type="submit" value="Submit">
+        </form>
+        </div>    
+
+
         <!-- <section class="stats">
             <div class="stat">
                 <h2>Users</h2>
@@ -38,7 +123,31 @@ if (!isset($_SESSION["user"])){
                 <p>1200</p>
             </div>
         </section> -->
-        <section class="form-section">
+        <!-- user update form
+        add flights delete flights
+        add accommodations delete accommodations -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- <section class="form-section">
             <h2>Delete Form</h2>
             <form class="form-column"  action='all_delete_logic.php' name='all_delete_logic.php' method="post">
                     <label> all delete: </label>
@@ -79,23 +188,9 @@ if (!isset($_SESSION["user"])){
             <form action='update_logic.php' name='update_logic.php' method="POST">
     <input type="hidden" id="custId" name="id">
 
-<form class="form-column" action='update_logic.php' name='update_logic.php' method="POST">
-    <input type="hidden" id="custId" name="id" >
 
-    <label>Username: </label>
-        <input type="text" name="username" placeholder="username"required>
-        <label>Password: </label>
-        <input type="text" name="password" placeholder="password" required>
-        <label>email: </label>
-        <input type="text" name="email" placeholder="email" required>
-        <label>user ID: </label>
-        <input type="text" name="user_id" placeholder="user ID" required>
-        <label>Usertype input admin or leave empty: </label>
-        <input type="text" name="usertype" placeholder="admin">
-        <input type="submit" value="update product">
-    </form>
-        </section>
-    </main>
+        </section> -->
+    <!-- </main> -->
 </body>
 </html>
 

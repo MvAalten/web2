@@ -162,10 +162,28 @@ h1 {
 .people-amount{
     width: 32px;
 }
+.container-user-forms{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    background-color: gainsboro;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    flex-direction: row;
+}
+.center-div-text{
+    display: flex;
+    width: 100px;
+    height: 10%;
+}
 .form-column{
     display: flex;
+    width: 100%;
+    height: 400px;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 .container-text-header {
@@ -850,11 +868,15 @@ body {
 }
 
 /* Main dashboard styles */
-.dashboard {
+.dashboard-admin, .dashboard {
     padding: 20px;
     text-align: center;
 }
-
+.dashboard-admin{
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
 .stats {
     display: flex;
     gap: 15px;
@@ -1210,3 +1232,32 @@ body {
     color: white;
 }
 /* bookings page end  */
+/* deniz dashboard */
+.balk{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #2F2B47;
+    align-items: center;
+}
+.logo-dashboard-admin{
+    display: flex;
+    height: 100px;
+}
+.admin-dashboard-header-text{
+    color: white;
+    font-size: 45px;
+    font-family: "Roboto Mono", monospace;
+}
+.form-column input[type="submit"]{
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 125px;
+    height: 30px;
+    display: flex;
+    color: white;
+    background-color: blue;
+    border-width: 0;
+    cursor: pointer;
+}

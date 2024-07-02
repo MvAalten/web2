@@ -20,7 +20,7 @@ if (!empty($user)) {
     // Controleer de usertype en stuur door naar de juiste dashboard
     if ($user["usertype"] == "user") {
         $_SESSION['usertype'] = 'user';
-        header("Location: dashboarduser.php");
+        header("Location: dashboard.php");
         
         exit();
     } elseif ($user["usertype"] == "admin") {
