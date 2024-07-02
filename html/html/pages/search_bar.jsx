@@ -14,4 +14,23 @@ function searchBar() {
             li[i].style.display = "none";
         }
     }
+        
 }
+// Voeg de event listener voor de 'Enter' toets toe
+document.getElementById("myInput").addEventListener("keydown", function(event) {
+    // enter knop drukken
+    if (event.key === "Enter") {
+        var ul, li, a, i;
+        ul = document.getElementById("placeName");
+        li = ul.getElementsByTagName("li");
+        // link voor wanneer er wordt gedrukt op de enter knop
+        for (i = 0; i < li.length; i++) {
+            if (li[i].style.display !== "none") {
+                a = li[i].getElementsByTagName("a")[0];
+                window.location.href = a.href;
+                break;
+            }
+        }
+    }
+});
+
